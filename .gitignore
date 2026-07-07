@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+
+# VS Code
+.vscode/
+
+# PDF Books
+books/*.pdf
+
+# Generated data
+extracted/
+knowledge/
