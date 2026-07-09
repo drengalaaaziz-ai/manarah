@@ -11,3 +11,6 @@ books/*.pdf
 # Generated data
 extracted/
 knowledge/
+
+# Runtime workspace
+workspace/

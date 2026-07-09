@@ -1,5 +1,12 @@
-from app.ingestion.book_ingestion import BookIngestionEngine
+from config.settings import settings
+from app.pipeline.pipeline import ManarahPipeline
 
-book = BookIngestionEngine("books/qawaed.pdf")
 
-print(book.inspect())
+print("=" * 60)
+print(settings.PROJECT_NAME)
+print("Version:", settings.VERSION)
+print("=" * 60)
+
+pipeline = ManarahPipeline("books/qawaed.pdf")
+
+pipeline.execute()
